@@ -16,10 +16,10 @@ stages:
     parameters:
       applicationEnvironment: Staging
       androidKeyStoreFile: $(InternalKeystore)
-      androidVariableGroup: 'ApplicationTemplate.Distribution.Internal.Android'
+      androidVariableGroup: 'TradeZeroApp.Distribution.Internal.Android'
       iosProvisioningProfileFile: $(InternalProvisioningProfile)
       iosCertificateFile: $(InternalCertificate)
-      iosVariableGroup: 'ApplicationTemplate.Distribution.Internal.iOS'
+      iosVariableGroup: 'TradeZeroApp.Distribution.Internal.iOS'
       removeHyperlinksFromReleaseNotes: true
       BannerVersionNameText: "CANARY"
 
@@ -36,7 +36,7 @@ stages:
       appCenteriOSSlug: $(AppCenteriOSSlug_Canary)
       appCenterAndroidSlug: $(AppCenterAndroidSlug_Canary)
       androidKeyStoreFile: $(InternalKeystore)
-      androidVariableGroup: 'ApplicationTemplate.Distribution.Internal.Android'
+      androidVariableGroup: 'TradeZeroApp.Distribution.Internal.Android'
       appCenterServiceConnectionName: $(AppCenterCanaryServiceConnection)
       appCenterDistributionGroup: $(AppCenterCanaryDistributionGroup)
 

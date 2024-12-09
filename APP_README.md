@@ -10,10 +10,10 @@ e.g. If you decide to change the solution structure, you should mention it in th
 
 This repository was generated using the **nventive Mobile Template**.
 - Version: [{{app-template-version}}](https://www.nuget.org/packages/NV.Templates.Mobile/{{app-template-version}})
-- Commit: [{{app-template-commit-short-sha}}](https://github.com/nventive/UnoApplicationTemplate/tree/{{app-template-commit-full-sha}})
+- Commit: [{{app-template-commit-short-sha}}](https://github.com/nventive/UnoTradeZeroApp/tree/{{app-template-commit-full-sha}})
 - Date: {{app-template-commit-date}}
 
-[**View the template changes since the generation of this project**.](https://github.com/nventive/UnoApplicationTemplate/compare/{{app-template-commit-full-sha}}..main)
+[**View the template changes since the generation of this project**.](https://github.com/nventive/UnoTradeZeroApp/compare/{{app-template-commit-full-sha}}..main)
 
 ## Environment and Prerequisites
 

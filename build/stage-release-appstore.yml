@@ -11,7 +11,7 @@ jobs:
   environment: ${{ parameters.deploymentEnvironment }}
 
   variables:
-  - group: ApplicationTemplate.Distribution.AppStore
+  - group: TradeZeroApp.Distribution.AppStore
   - name: artifactName
     value: $(iOSArtifactName)_${{ parameters.applicationEnvironment }}
 

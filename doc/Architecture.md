@@ -141,11 +141,11 @@ This application uses [DynamicData](https://github.com/reactivemarbles/DynamicDa
 
 ### Forced Update
 
-This application uses the [IUpdateRequiredService](../src/app/ApplicationTemplate.Business/ForcedUpdates/IUpdateRequiredService.cs) which exposes an event that allows you to know when you should redirect the user to a page that will lead him to the appstore where he can update the app. 
+This application uses the [IUpdateRequiredService](../src/app/TradeZeroApp.Business/ForcedUpdates/IUpdateRequiredService.cs) which exposes an event that allows you to know when you should redirect the user to a page that will lead him to the appstore where he can update the app. 
 
 ### Kill Switch
 
-This application uses the [IKillSwitchService](../src/app/ApplicationTemplate.Business/KillSwitch/IKillSwitchService.cs) which exposes an event that allows you to know when you the Kill switch is activated and when it gets deactivated.
+This application uses the [IKillSwitchService](../src/app/TradeZeroApp.Business/KillSwitch/IKillSwitchService.cs) which exposes an event that allows you to know when you the Kill switch is activated and when it gets deactivated.
 
 ## Presentation
 
@@ -185,7 +185,7 @@ This application uses [FluentValidation](https://www.nuget.org/packages/FluentVa
 See [Validation.md](Validation.md) for more details.
 
 ### Analytics
-This application has a built-in analytics base that can be used to track events and errors with potentially any analytics service (e.g. AppCenter, Firebase, Segment, etc.). This base is built around the [IAnalyticsSink](../src/app/ApplicationTemplate.Presentation/Framework/Analytics/IAnalyticsSink.cs) interface.
+This application has a built-in analytics base that can be used to track events and errors with potentially any analytics service (e.g. AppCenter, Firebase, Segment, etc.). This base is built around the [IAnalyticsSink](../src/app/TradeZeroApp.Presentation/Framework/Analytics/IAnalyticsSink.cs) interface.
 
 See [DefaultAnalytics.md](DefaultAnalytics.md) for more details.
 

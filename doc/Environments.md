@@ -14,7 +14,7 @@ By default, the template offers the following runtime environments, defined by t
 
 You can add / remove runtime environments by simply adding or removing appsettings files (e.g. `appsettings.myenvironment.json` will create a new runtime environment named `myenvironment`).
 
-This is governed by `IEnvironmentManager` and configured inside the [ConfigurationConfiguration.cs](../src/app/ApplicationTemplate.Presentation/Configuration/ConfigurationConfiguration.cs) file.
+This is governed by `IEnvironmentManager` and configured inside the [ConfigurationConfiguration.cs](../src/app/TradeZeroApp.Presentation/Configuration/ConfigurationConfiguration.cs) file.
 
 - The default runtime environment is set based on a compile-time directive (e.g. production).
 - You can get the current environment using `IEnvironmentManager.Current`.
@@ -67,7 +67,7 @@ if (_environmentManager.Current == "PRODUCTION") { ... }
 
 ## Diagnostics
 
-Multiple environment features can be tested from the diagnostics overlay. This is configured in [ConfigurationDebuggerViewModel](../src/app/ApplicationTemplate.Presentation/ViewModels/Diagnostics/Configuration/ConfigurationDebuggerViewModel.cs).
+Multiple environment features can be tested from the diagnostics overlay. This is configured in [ConfigurationDebuggerViewModel](../src/app/TradeZeroApp.Presentation/ViewModels/Diagnostics/Configuration/ConfigurationDebuggerViewModel.cs).
 
 - You can see the current runtime environment.
 - You can see what the environment will be overriden to. 

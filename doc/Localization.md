@@ -6,9 +6,9 @@ For more documentation on localization, read the references listed at the bottom
 
 ## Text localization
 
-- We use `.resw` files located under the [Strings folder](../src/app/ApplicationTemplate.Shared/Strings) to localize texts.
+- We use `.resw` files located under the [Strings folder](../src/app/TradeZeroApp.Shared/Strings) to localize texts.
 
-- An Uno implementation of `IStringLocalizer` (`ResourceLoaderStringLocalizer`) is registered as service in the [LocalizationConfiguration.cs](../src/app/ApplicationTemplate.Shared/Configuration/LocalizationConfiguration.cs) file.
+- An Uno implementation of `IStringLocalizer` (`ResourceLoaderStringLocalizer`) is registered as service in the [LocalizationConfiguration.cs](../src/app/TradeZeroApp.Shared/Configuration/LocalizationConfiguration.cs) file.
 
 - For tests projects, a mock implementation of `IStringLocalizer` is used to avoid relying on a file. This improves performance and eases test parallelization.
 
@@ -28,7 +28,7 @@ For more documentation on localization, read the references listed at the bottom
 
 - In most cases, the **system UI culture** will define the displayed culture of the application; this is the default behaviour. 
 
-- In some cases, we would like to allow the user to switch to another language based on a user preference (sandboxed to the application). This template offers this ability using a configuration setting (`ThreadCultureOverrideService`) configured in the [LocalizationConfiguration.cs](../src/app/ApplicationTemplate.Shared/Configuration/LocalizationConfiguration.cs) file.
+- In some cases, we would like to allow the user to switch to another language based on a user preference (sandboxed to the application). This template offers this ability using a configuration setting (`ThreadCultureOverrideService`) configured in the [LocalizationConfiguration.cs](../src/app/TradeZeroApp.Shared/Configuration/LocalizationConfiguration.cs) file.
 
   - Much like the [runtime environment](Environments.md), the preferred culture is saved in a file and processed during the startup. We use cultures instead of languages to support different versions of the same language (e.g. en-US vs en-UK or fr-CA vs fr-FR).
 
@@ -43,7 +43,7 @@ For more documentation on localization, read the references listed at the bottom
 
 ## Diagnostics
 
-Multiple localization features can be tested from the diagnostics screen. This is configured in [SummaryDiagnosticsViewModel](../src/app/ApplicationTemplate.Shared/Presentation/Diagnostics/CultureDiagnosticsViewModel.cs).
+Multiple localization features can be tested from the diagnostics screen. This is configured in [SummaryDiagnosticsViewModel](../src/app/TradeZeroApp.Shared/Presentation/Diagnostics/CultureDiagnosticsViewModel.cs).
 
 - You can see the current UI culture.
 - You can set another UI culture (supported or not by the application); this is very useful to test how the application will behave in an unsupported culture. 

@@ -10,7 +10,7 @@
     "language": "C#",
     "type": "project"
   },
-  "sourceName": "ApplicationTemplate",
+  "sourceName": "TradeZeroApp",
   "preferNameDirectory": true,
   "guids": [
     "752f6418-d9b7-4185-ae8c-79d8ddbcabcd"

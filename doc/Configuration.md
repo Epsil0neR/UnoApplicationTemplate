@@ -14,7 +14,7 @@ The `IConfiguration` is populated using 3 layers of configuration files.
  
 1. `appsettings.override.json` is an optional file that appears when you override a value from the application.
 
-Check the `AddAppSettings` method from [AppSettingsConfiguration.cs](../src/app/ApplicationTemplate.Presentation/Configuration/AppSettingsConfiguration.cs) file to see how the 3 layers are setup.
+Check the `AddAppSettings` method from [AppSettingsConfiguration.cs](../src/app/TradeZeroApp.Presentation/Configuration/AppSettingsConfiguration.cs) file to see how the 3 layers are setup.
 
 ## Accessing
 

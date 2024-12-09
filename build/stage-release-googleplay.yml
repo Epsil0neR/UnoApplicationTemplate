@@ -11,7 +11,7 @@ jobs:
   environment: ${{ parameters.deploymentEnvironment }}
 
   variables:
-  - group: ApplicationTemplate.Distribution.GooglePlay
+  - group: TradeZeroApp.Distribution.GooglePlay
   - name: artifactName
     value: $(AndroidArtifactName)_${{ parameters.applicationEnvironment }}
 

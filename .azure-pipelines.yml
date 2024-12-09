@@ -47,10 +47,10 @@ stages:
       pathToAndroidManifest: '$(Pipeline.Workspace)/GeneratedApp/src/app/GeneratedApp.Mobile/Android/AndroidManifest.xml'
       applicationEnvironment: Generated_Staging
       androidKeyStoreFile: $(InternalKeystore)
-      androidVariableGroup: 'ApplicationTemplate.Distribution.Internal.Android'
+      androidVariableGroup: 'TradeZeroApp.Distribution.Internal.Android'
       iosProvisioningProfileFile: $(InternalProvisioningProfile)
       iosCertificateFile: $(InternalCertificate)
-      iosVariableGroup: 'ApplicationTemplate.Distribution.Internal.iOS'
+      iosVariableGroup: 'TradeZeroApp.Distribution.Internal.iOS'
 
 - stage: Publish_Template_Package
   condition: and(succeeded(), eq(variables['IsLightBuild'], 'false'), eq(variables['IsReleaseBranch'], 'true'))
@@ -70,10 +70,10 @@ stages:
     parameters:
       applicationEnvironment: Staging
       androidKeyStoreFile: $(InternalKeystore)
-      androidVariableGroup: 'ApplicationTemplate.Distribution.Internal.Android'
+      androidVariableGroup: 'TradeZeroApp.Distribution.Internal.Android'
       iosProvisioningProfileFile: $(InternalProvisioningProfile)
       iosCertificateFile: $(InternalCertificate)
-      iosVariableGroup: 'ApplicationTemplate.Distribution.Internal.iOS'
+      iosVariableGroup: 'TradeZeroApp.Distribution.Internal.iOS'
       BannerVersionNameText: "STAGING"
 
 - stage: AppCenter_TestFlight_Staging
@@ -88,7 +88,7 @@ stages:
       appCenteriOSSlug: $(AppCenteriOSSlug)
       appCenterAndroidSlug: $(AppCenterAndroidSlug)
       androidKeyStoreFile: $(InternalKeystore)
-      androidVariableGroup: 'ApplicationTemplate.Distribution.Internal.Android'
+      androidVariableGroup: 'TradeZeroApp.Distribution.Internal.Android'
       appCenterServiceConnectionName: $(AppCenterServiceConnection)
       appCenterDistributionGroup: $(AppCenterDistributionGroup)
 
@@ -105,10 +105,10 @@ stages:
     parameters:
       applicationEnvironment: Production
       androidKeyStoreFile: $(GooglePlayKeystore)
-      androidVariableGroup: 'ApplicationTemplate.Distribution.GooglePlay'
+      androidVariableGroup: 'TradeZeroApp.Distribution.GooglePlay'
       iosProvisioningProfileFile: $(AppStoreProvisioningProfile)
       iosCertificateFile: $(AppStoreCertificate)
-      iosVariableGroup: 'ApplicationTemplate.Distribution.AppStore'
+      iosVariableGroup: 'TradeZeroApp.Distribution.AppStore'
 
 - stage: AppCenter_Production
   condition: and(succeeded(), eq(variables['IsLightBuild'], 'false'))
@@ -122,7 +122,7 @@ stages:
       appCenteriOSSlug: $(AppCenteriOSSlug_Production)
       appCenterAndroidSlug: $(AppCenterAndroidSlug_Production)
       androidKeyStoreFile: $(GooglePlayKeystore)
-      androidVariableGroup: 'ApplicationTemplate.Distribution.GooglePlay'
+      androidVariableGroup: 'TradeZeroApp.Distribution.GooglePlay'
       appCenterServiceConnectionName: $(AppCenterServiceConnection)
       appCenterDistributionGroup: $(AppCenterDistributionGroup)
 

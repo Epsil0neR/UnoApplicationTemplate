@@ -42,7 +42,7 @@ No matter your changes, these checks always apply.
   - Update `Diagnostics.md` if you made changes to **diagnostic tools**.
   - Update `Architecture.md` and its diagrams if you made **architecture decisions** or if you introduced new **recipes**.
   - ...and so forth: Make sure you update the documentation files associated to the recipes you changed. Review the topics by looking at the content of the `doc/` folder.
-- [ ] Images about the template are referenced from the [wiki](https://github.com/nventive/UnoApplicationTemplate/wiki/Images) and added as images in this git.
+- [ ] Images about the template are referenced from the [wiki](https://github.com/nventive/UnoTradeZeroApp/wiki/Images) and added as images in this git.
 - [ ] TODO comments are hints for next steps for users of the template and not planned work.
 
 ### Contextual

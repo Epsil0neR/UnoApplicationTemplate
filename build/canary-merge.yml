@@ -39,7 +39,7 @@ steps:
     mergeBranch: true
     branchToMerge: 'main'
     isBranchToMergeAway: true
-    mergeRepositoryConnection: 'UnoApplicationTemplate'
+    mergeRepositoryConnection: 'UnoTradeZeroApp'
     pushMergeBranch: true
     pushBranch: true
     gitUserName: 'nventive DevOps'

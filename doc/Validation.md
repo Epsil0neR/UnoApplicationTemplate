@@ -6,9 +6,9 @@ We use [FluentValidation](https://www.nuget.org/packages/FluentValidation/) to e
 
 You can use the `AbstractValidator` to validate a form view model.
 
-- `FluentValidation` is compatible with `IStringLocalizer` if you want to use specific resources. `FluentValidation` comes with default resources that can be ovewritten. This is configured in the [FluentValidationLanguageManager.cs](../src/app/ApplicationTemplate.Shared/Configuration/FluentValidationLanguageManager.cs) file.
+- `FluentValidation` is compatible with `IStringLocalizer` if you want to use specific resources. `FluentValidation` comes with default resources that can be ovewritten. This is configured in the [FluentValidationLanguageManager.cs](../src/app/TradeZeroApp.Shared/Configuration/FluentValidationLanguageManager.cs) file.
 
-- It is also compatible with `GenericHost` to support easy dependency injection of the validators. You can easily resolve any validators as they are registered using `AddValidatorsFromAssemblyContaining` in the [ViewModelConfiguration.cs](../src/app/ApplicationTemplate.Shared/Configuration/ViewModelConfiguration.cs) file.
+- It is also compatible with `GenericHost` to support easy dependency injection of the validators. You can easily resolve any validators as they are registered using `AddValidatorsFromAssemblyContaining` in the [ViewModelConfiguration.cs](../src/app/TradeZeroApp.Shared/Configuration/ViewModelConfiguration.cs) file.
 
 ```csharp
 public class LoginFormViewModel : ViewModel

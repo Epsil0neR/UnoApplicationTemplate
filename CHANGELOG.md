@@ -67,8 +67,8 @@ Prefix your items with `(Template)` if the change is about the template and not 
 ## 1.0.X
 - Removed the UI tests project.
 - Split the automated tests into 2 projects: 
-  - **ApplicationTemplate.Tests.Unit** for unit tests.
-  - **ApplicationTemplate.Tests.Functional** for functional tests.
+  - **TradeZeroApp.Tests.Unit** for unit tests.
+  - **TradeZeroApp.Tests.Functional** for functional tests.
 - Added `azure-pipelines-api-integration-tests.yml` as an API Integration Tests Pipeline.
 - Removed the installation of the mobile dotnet workloads for pipelines test steps.
 

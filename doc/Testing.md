@@ -200,12 +200,12 @@ You can collect the code coverage locally using the following command lines.
 
 - For Functional tests:
   ```powershell
-  dotnet test src/app/ApplicationTemplate.Tests.Functional/ApplicationTemplate.Tests.Functional.csproj --collect:"XPlat Code Coverage" --settings build/test.runsettings
+  dotnet test src/app/TradeZeroApp.Tests.Functional/TradeZeroApp.Tests.Functional.csproj --collect:"XPlat Code Coverage" --settings build/test.runsettings
   ```
 
 - For Unit tests:
   ```powershell
-  dotnet test src/app/ApplicationTemplate.Tests.Unit/ApplicationTemplate.Tests.Unit.csproj --collect:"XPlat Code Coverage" --settings build/test.runsettings
+  dotnet test src/app/TradeZeroApp.Tests.Unit/TradeZeroApp.Tests.Unit.csproj --collect:"XPlat Code Coverage" --settings build/test.runsettings
   ```
 
 ### Limitations

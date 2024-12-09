@@ -2,7 +2,7 @@
 
 ## Command error handling
 
-If an exception is thrown during the execution of an `ICommand`, the exception is propagated to [HandleCommandException](../src/app/ApplicationTemplate.Shared/Configuration/ErrorConfiguration.cs).
+If an exception is thrown during the execution of an `ICommand`, the exception is propagated to [HandleCommandException](../src/app/TradeZeroApp.Shared/Configuration/ErrorConfiguration.cs).
 
 - This handler will log the exception and potentially log it to an analytics provider.
 
@@ -19,7 +19,7 @@ If an exception is thrown during the execution of an `ICommand`, the exception i
 
 ### Exception Hub
 
-If an exception is thrown during the execution of an API request, the exception is propagated to an exception hub. You can observe those exceptions if you want. This is configured in `AddExceptionHubHandler` of the [ApiConfiguration.cs](../src/app/ApplicationTemplate.Shared/Configuration/ApiConfiguration.cs) file.
+If an exception is thrown during the execution of an API request, the exception is propagated to an exception hub. You can observe those exceptions if you want. This is configured in `AddExceptionHubHandler` of the [ApiConfiguration.cs](../src/app/TradeZeroApp.Shared/Configuration/ApiConfiguration.cs) file.
 
 [For more information on the ExceptionHubHandler](https://github.com/nventive/MallardMessageHandlers#exceptionhubhandler).
 
@@ -27,7 +27,7 @@ If an exception is thrown during the execution of an API request, the exception 
 
 You can also convert an API response into an exception by using an `ExceptionInterpreter`.
 
-This is configured in the [ApiConfiguration.cs](../src/app/ApplicationTemplate.Shared/Configuration/ApiConfiguration.cs) file.
+This is configured in the [ApiConfiguration.cs](../src/app/TradeZeroApp.Shared/Configuration/ApiConfiguration.cs) file.
 
 [For more information on the ExceptionInterpreterHandler](https://github.com/nventive/MallardMessageHandlers#exceptioninterpreterhandler).
 
@@ -35,7 +35,7 @@ This is configured in the [ApiConfiguration.cs](../src/app/ApplicationTemplate.S
 
 If an exception is thrown during the execution of an API request, a network connectivity check is executed to validate if the user has a network connectivity. If it's not the case, a specific type of exception (`NoNetworkException`) is thrown.
 
-This is configured in the [ApiConfiguration.cs](../src/app/ApplicationTemplate.Shared/Configuration/ApiConfiguration.cs) file.
+This is configured in the [ApiConfiguration.cs](../src/app/TradeZeroApp.Shared/Configuration/ApiConfiguration.cs) file.
 
 [For more information on the NetworkExceptionHandler](https://github.com/nventive/MallardMessageHandlers#networkexceptionhandler).
 

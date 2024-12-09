@@ -4,7 +4,7 @@ We use [ReviewService](https://github.com/nventive/ReviewService) for mobile app
 
 ## Configuration
 
-It's configured in [ReviewConfiguration.cs](../src/app/ApplicationTemplate.Presentation/Configuration/ReviewConfiguration.cs).
+It's configured in [ReviewConfiguration.cs](../src/app/TradeZeroApp.Presentation/Configuration/ReviewConfiguration.cs).
 
 ### Native Review Prompters
 
@@ -12,7 +12,7 @@ The package ReviewService.NativePrompters is installed in the Mobile and Windows
 
 ### Review Settings Source
 
-We use a custom implementation of `IReviewSettingsSource` called [DataPersisterReviewSettingsSource](../src/app/ApplicationTemplate.Access/LocalStorage/DataPersisterReviewSettingsSource.cs) to persist the review data on disk.
+We use a custom implementation of `IReviewSettingsSource` called [DataPersisterReviewSettingsSource](../src/app/TradeZeroApp.Access/LocalStorage/DataPersisterReviewSettingsSource.cs) to persist the review data on disk.
 
 ## Reference
 

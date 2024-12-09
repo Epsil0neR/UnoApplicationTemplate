@@ -2,23 +2,23 @@
   # Prerequisites - Variable groups
   # Make sure you have the following variable groups in your Azure pipeline library:
   #
-  # ApplicationTemplate.Distribution.Internal.Android
+  # TradeZeroApp.Distribution.Internal.Android
   #   ApplicationIdentifier: This is the internal application id of the app for AppCenter releases. Note that this variable is used by Nimue to automatically change the package name.
   #   AndroidSigningKeyAlias: This is the keystore alias.
   #   AndroidSigningKeyPass: This is the keystore keypass (secured).
   #   AndroidSigningStorePass: This is the keystore storepass (secured).
   #
-  # ApplicationTemplate.Distribution.GooglePlay
+  # TradeZeroApp.Distribution.GooglePlay
   #   ApplicationIdentifier: This is the official application id of the app that should go on the store. Note that this variable is used by Nimue to automatically change the package name.
   #   AndroidSigningKeyAlias: This is the keystore alias.
   #   AndroidSigningKeyPass: This is the keystore keypass (secured).
   #   AndroidSigningStorePass: This is the keystore storepass (secured).
   #
-  # ApplicationTemplate.Distribution.Internal.iOS
+  # TradeZeroApp.Distribution.Internal.iOS
   #   ApplicationIdentifier: This is the internal application id of the app for AppCenter releases. Note that this variable is used by Nimue to automatically change the bundle id.
   #   AppleCertificatePassword: The certificate password (secured).
   #
-  # ApplicationTemplate.Distribution.AppStore
+  # TradeZeroApp.Distribution.AppStore
   #   ApplicationIdentifier: The official bundle id of the app that should go on the store; the app will be resigned with this id. Note that this variable is used by Nimue to automatically change the bundle id.
   #   AppleCertificatePassword: The certificate password (secured).
   #   AppleTeamId: The developer account team id (secured).
@@ -28,17 +28,17 @@
   # Make sure you have the following secured files in your Azure pipeline library.
   #
   # Android
-  InternalKeystore: com.nventive.internal.applicationtemplate.jks # This is the internal keystore used for internal builds.
-  GooglePlayKeystore: com.nventive.applicationtemplate.jks # This is the official keystore used for Google Play.
+  InternalKeystore: com.nventive.internal.TradeZeroApp.jks # This is the internal keystore used for internal builds.
+  GooglePlayKeystore: com.nventive.TradeZeroApp.jks # This is the official keystore used for Google Play.
   # iOS
-  InternalProvisioningProfile: com.nventive.applicationtemplate.mobileprovision # This is the internal provisioning profile for internal builds.
+  InternalProvisioningProfile: com.nventive.TradeZeroApp.mobileprovision # This is the internal provisioning profile for internal builds.
   InternalCertificate: nventive.p12 # This is the certificate from the nventive Apple account used to sign internal builds.
-  AppStoreProvisioningProfile: com.nventive.applicationtemplate.mobileprovision # This is the client provisioning profile for the AppStore (Production distribution).
+  AppStoreProvisioningProfile: com.nventive.TradeZeroApp.mobileprovision # This is the client provisioning profile for the AppStore (Production distribution).
   AppStoreCertificate: nventive.p12 # This is the client production certificate used to sign AppStore builds.
 
   # Prerequisites - Service connections
   # Make sure you have the following service connections in your Azure pipeline library.
-  GooglePlayServiceConnection: GooglePlay-nventive-ApplicationTemplate
+  GooglePlayServiceConnection: GooglePlay-nventive-TradeZeroApp
   AppCenterServiceConnection: AppCenter-nventive-framework
   AppStoreServiceConnection: AppStore-nventive
   AppCenterCanaryServiceConnection: AppCenter-nventive-framework
@@ -49,9 +49,9 @@
   AppCenterAndroidSlug: 'nventive-framework/Application-Template-1'
   AppCenteriOSSlug: 'nventive-framework/Application-Template'
   AppCenterWindowsSlug: 'nventive-framework/Application-Template-2'
-  AppCenterAndroidSlug_Production: 'nventive-framework/ApplicationTemplate-Production-1'
-  AppCenteriOSSlug_Production: 'nventive-framework/ApplicationTemplate-Production'
-  AppCenterWindowsSlug_Production: 'nventive-framework/ApplicationTemplate-Production-2'
+  AppCenterAndroidSlug_Production: 'nventive-framework/TradeZeroApp-Production-1'
+  AppCenteriOSSlug_Production: 'nventive-framework/TradeZeroApp-Production'
+  AppCenterWindowsSlug_Production: 'nventive-framework/TradeZeroApp-Production-2'
   AppCenterAndroidSlug_Canary: 'nventive-framework/Application-Template-Canary-1'
   AppCenteriOSSlug_Canary: 'nventive-framework/Application-Template-Canary'
   AppCenterWindowsSlug_Canary: 'nventive-framework/Application-Template-Canary-2'
@@ -65,7 +65,7 @@
   # AzureStorageAccountName:
 
   # Solution to build
-  SolutionName: ApplicationTemplate
+  SolutionName: TradeZeroApp
 
   # Paths to file
   InfoPlistPath: '$(Build.SourcesDirectory)/src/app/$(SolutionName).Mobile/iOS/Info.plist'

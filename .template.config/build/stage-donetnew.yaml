@@ -6,7 +6,7 @@ jobs:
       vmImage : windows-2022
     steps:
     - script: dotnet new -i $(Build.SourcesDirectory)
-      displayName: 'Install UnoApplicationTemplate'
+      displayName: 'Install UnoTradeZeroApp'
 
     - script: dotnet new nv-mobile -n GeneratedApp
       displayName: 'Generate Project'
